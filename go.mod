@@ -15,6 +15,4 @@ require (
 	github.com/spf13/viper v1.7.1
 )
 
-replace (
-    github.com/mpppk/imagine => ../imagine
-)
+replace github.com/mpppk/imagine => ../imagine
