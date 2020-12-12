@@ -42,9 +42,10 @@ func pathToTagNames(p string, depth int) []string {
 
 func newLoadCmd(fs afero.Fs) (*cobra.Command, error) {
 	cmd := &cobra.Command{
-		Use:   "load",
-		Short: "Load assets",
-		Long:  ``,
+		Use:     "load",
+		Short:   "Load images",
+		Long:    `load command loads images from directory and print image metadata to stdout.`,
+		Example: "imagine-utl load path/to/images",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			conf, err := option.NewLoadCmdConfigFromViper(args)
 			if err != nil {
