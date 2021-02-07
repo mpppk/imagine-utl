@@ -18,9 +18,6 @@ jobs:
         with:
           go-version: 1.14
 
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-
       - name: Setup env
         run: |
           echo "::set-env name=GOPATH::$(go env GOPATH)"
