@@ -1,6 +1,6 @@
 module github.com/mpppk/imagine-utl
 
-go 1.14
+go 1.19
 
 require (
 	github.com/blang/semver v3.8.0+incompatible
